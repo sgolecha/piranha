@@ -1,0 +1,14 @@
+Tasks:
+    - Name: PrintTask
+      Args:
+        - '-x test'
+      Dependency:
+        - FooTask
+        
+    - Name: FooTask
+      Args:   
+        - '-r'
+        
+Workers: 10
+  
+    
